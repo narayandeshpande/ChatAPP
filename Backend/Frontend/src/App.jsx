@@ -1,11 +1,11 @@
 import React from 'react'
 import { Toaster } from 'react-hot-toast';
-import Left from './components/Home/Left/Left'
-import Right from './components/Home/Right/Right'
-import Signup from './components/Signup'
-import Login from './components/Login'
+import Left from './components/Home/Left/Left.jsx'
+import Right from './components/Home/Right/Right.jsx'
+import Signup from './components/Signup.jsx'
+import Login from './components/Login.jsx'
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { useAuth } from '../src/context/Authprovider'
+import { useAuth } from '../src/context/Authprovider.jsx'
 const App = () => {
   const [authuser, setAuthuser] = useAuth()
   console.log(authuser);

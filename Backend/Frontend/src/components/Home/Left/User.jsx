@@ -1,6 +1,6 @@
 import React from 'react'
-import useConversation from '../../../zustand/useConversation'
-import { useSocketContext } from '../../../context/SocketContaxt';
+import useConversation from '../../../zustand/useConversation.js'
+import { useSocketContext } from '../../../context/SocketContaxt.jsx';
 
 const User = ({user}) => {
   const {selectedConversation,setSelectedConversation}=useConversation()

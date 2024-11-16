@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
 import axios  from 'axios'
-import { useAuth } from '../context/Authprovider'
+import { useAuth } from '../context/Authprovider.jsx'
 import { Link } from 'react-router-dom'
 import toast from 'react-hot-toast'
 const Login = () => {
