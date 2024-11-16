@@ -11,7 +11,7 @@ const useGetMessage = () => {
       if (selectedConversation && selectedConversation._id) {
         try {
           const res = await axios.get(
-            `https://chatapp-bnvo.onrender.com${selectedConversation._id}`,{
+            `http://localhost:3000/message/get/${selectedConversation._id}`,{
                 withCredentials:true
             }
           );

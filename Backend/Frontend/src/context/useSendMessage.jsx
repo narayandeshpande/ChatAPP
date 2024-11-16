@@ -7,7 +7,7 @@ const useSendMessage = () => {
   const sendMessages = async (message) => {
     setLoading(true);
     try {
-const res=await axios.post(`https://chatapp-bnvo.onrender.com${selectedConversation._id}`,{message},{
+const res=await axios.post(`http://localhost:3000/message//send/${selectedConversation._id}`,{message},{
         withCredentials:true
       })
       setMessages([...messages, res.data.newMessage]);

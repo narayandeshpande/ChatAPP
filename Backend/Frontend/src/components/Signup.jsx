@@ -27,7 +27,7 @@ const Signup = () => {
                         confirmPassword:ConfirmPassword
                 }
                 //console.log(userInfo);
-               await axios.post("https://chatapp-bnvo.onrender.com",userInfo,{
+               await axios.post("http://localhost:3000/user/signup",userInfo,{
                 withCredentials: true
                })
                 .then((res)=>{

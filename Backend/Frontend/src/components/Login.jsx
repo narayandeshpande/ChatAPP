@@ -18,7 +18,7 @@ const Login = () => {
                         email:data.email,
                         password:data.password
                 }
-               await axios.post("https://chatapp-bnvo.onrender.com",userInfo,{
+               await axios.post("http://localhost:3000/user/login",userInfo,{
                 withCredentials: true
               })
                 .then((res)=>{
