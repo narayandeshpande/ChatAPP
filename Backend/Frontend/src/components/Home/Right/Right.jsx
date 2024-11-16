@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import Chatuser from './Chatuser'
-import Messages from './Messages'
-import Typesend from './Typesend'
+import Chatuser from './Chatuser.jsx'
+import Messages from './Messages.jsx'
+import Typesend from './Typesend.jsx'
 import {useAuth} from '../../../context/Authprovider.jsx'
-import useConversation from '../../../zustand/useConversation'
+import useConversation from '../../../zustand/useConversation.js'
 import { CiMenuFries } from "react-icons/ci";
 const Right = () => {
   const {selectedConversation,setSelectedConversation}=useConversation()
