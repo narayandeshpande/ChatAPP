@@ -9,7 +9,7 @@ const useGetAllUsers = () => {
                         setLoading(true)
                         try {
                                 const token = Cookies.get("jwt")
-                               const responce= await axios.get("http://localhost:3000/user/allusers", {
+                               const responce= await axios.get("https://chatapp-bnvo.onrender.com", {
                                 withCredentials: true
                               })
                                 setAllusers(responce.data)

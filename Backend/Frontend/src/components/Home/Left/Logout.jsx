@@ -6,7 +6,7 @@ const Logout = () => {
         // const [loading,setLoading]=(false)
         const logout = async () => {
                 try {
-                    const res = await axios.get("http://localhost:3000/user/logout", { withCredentials: true });
+                    const res = await axios.get("https://chatapp-bnvo.onrender.com", { withCredentials: true });
                     console.log(res);
             
                     if (res.status === 200) {
