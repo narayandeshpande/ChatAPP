@@ -13,7 +13,7 @@ export const SocketProvider = ({ children }) => {
 
     useEffect(() => {
         if (authUser) {
-            const newSocket = io("http://localhost:3000", {
+            const newSocket = io("https://chatapp-bnvo.onrender.com", {
                 query: {
                     userId: authUser.user.id,
                 },
