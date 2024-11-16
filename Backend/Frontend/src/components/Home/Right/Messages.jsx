@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import Message from '../Right/Message.jsx'
 import Loading from '../../../components/Loading.jsx'
 import useGetMessages from '../../../context/useGetMessages.jsx'
-import useGetsocketMessage from '../../../context/useGetsocketMessage.jsx'
+import useGetsocketMessage from "../../../context/useGetSocketMessage.jsx"
 const Messages = () => {
   const {loading,messages}=useGetMessages()
   useGetsocketMessage()
