@@ -16,7 +16,7 @@ const secureRoute=async(req,res,next)=>{
                 const user=await User.findById(decode.userId).select("-password")
                 if(!user)
                 {
-                        return res.status(401).json({error:"No user fount"})
+                        return res.status(401).json({error:"No user found"})
                 }
                 req.user=user
                 // console.log(user);

@@ -52,6 +52,7 @@ const Signup = () => {
           <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2 w-full justify-center items-center" >
             <input type="text" name="fname" id="fname" placeholder="FullName" className="border border-white rounded-sm p-2 md:w-[50%] w-[90%]" 
             {...register("FullName", { required: true })}
+            
             />
             {errors.FullName && <span className='text-red-600 text-sm'>This field is required</span>}
             <input type="email" name="email" id="email" placeholder="Email" className="border border-white rounded-sm p-2 md:w-[50%] w-[90%]" 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
 import axios  from 'axios'
-import { useAuth } from '../context/Authprovider'
+import { useAuth } from './context/Authprovider'
 import { Link } from 'react-router-dom'
 import toast from 'react-hot-toast'
 const Login = () => {
@@ -18,7 +18,7 @@ const Login = () => {
                         email:data.email,
                         password:data.password
                 }
-               await axios.post("http://localhost:3000/user/login",userInfo,{
+               await axios.post("https://chatapp-bljr.onrender.com/user/login",userInfo,{
                 withCredentials: true
               })
                 .then((res)=>{

@@ -18,6 +18,7 @@ app.use(cors(
 dotenv.config()
 const port = process.env.PORT || 5000
 const MONGOURL=process.env.MONGODBURL
+
 try {
         mongoose.connect(MONGOURL)
         console.log("Connect to DB");

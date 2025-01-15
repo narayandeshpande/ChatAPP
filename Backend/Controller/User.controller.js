@@ -54,8 +54,6 @@ export const login = async (req, res) => {
         if (!isMatch) {
             return res.status(400).json({ error: "Invalid user credentials" });
         }
-
-
         createTokenAndSaveCookie(user._id, res);
 
         res.status(200).json({
