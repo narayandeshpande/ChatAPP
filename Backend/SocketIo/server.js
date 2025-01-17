@@ -10,7 +10,7 @@ const io = new Server(server, {
         cors: {
                 origin: "https://chatapp-narayan.netlify.app",
                 methods: ["GET", "POST"],
-                // credentials: true
+                credentials: true
         }
 });
 
