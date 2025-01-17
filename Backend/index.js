@@ -28,6 +28,7 @@ try {
 }
 
 app.get("/printmsg",(req,res,next)=>{
+        console.log("Hello test1")
         return res.send(200).json({
                 message: "Hello test"
         })
