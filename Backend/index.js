@@ -26,6 +26,12 @@ try {
 } catch (error) {
         console.log(error);           
 }
+
+app.get("/printmsg",(req,res,next)=>{
+        return res.send(200).json({
+                message: "Hello test"
+        })
+})
 app.use("/user",userRoute)
 app.use('/message',messageRouter)
 // --------------------------------------------
