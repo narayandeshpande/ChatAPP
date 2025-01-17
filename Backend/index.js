@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cookieparser())
 app.use(cors(
         {
-                origin: 'https://marvelous-churros-168246.netlify.app',
+                origin: 'https://chatapp-narayan.netlify.app,
                 credentials:true
         }
 ))
